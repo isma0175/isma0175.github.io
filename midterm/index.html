@@ -73,7 +73,7 @@
                 <form action="#">
                     <div class="input-container">
                         <label for="fullname">Your Name</label>
-                        <input type="text" name="fullname" />
+                        <input type="text" name="fullname" id="fullname">
                     </div>
                     <div class="input-container">
                         <label for="email">Your Email</label>
@@ -84,17 +84,17 @@
                         <textarea name="message" rows="4" cols="5" id="message"></textarea>
                     </div>
                     <div class="input-container">
-                        <label for="visit">Would you like to visit Starfish</label>
+                        <p>Would you like to visit Starfish</p>
                         <div class="input-group">
-                            <span>
-                                <input type="radio" name="visit" value="yes">Yes
-                            </span>
-                            <span>
-                                <input type="radio" name="visit" value="No">No
-                            </span>
-                            <span>
-                                <input type="radio" name="visit" value="Maybe">Maybe
-                            </span>
+                            <label for="visit1">
+                                <input type="radio" name="visit" id="visit1" value="yes">Yes
+                            </label>
+                            <label for="visit2">
+                                <input type="radio" name="visit" id="visit2" value="No">No
+                            </label>
+                            <label class="visit3">
+                                <input type="radio" name="visit" id="visit3" value="Maybe">Maybe
+                            </label>
                         </div>
                     </div>
                     <div class="input-group-button">

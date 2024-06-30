@@ -116,11 +116,11 @@ body {
     line-height: 15px;
 }
 
-.input-group span{
+.input-group label{
     margin-right: 30px;
 }
 
-.input-group span input{
+.input-group label input{
     margin-right: 5px;
 }
 
