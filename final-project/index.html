@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Mockup</title>
 </head>
 
@@ -11,16 +11,16 @@
     <!-- Navigation Start-->
     <nav id="nav">
         <ul>
-            <li>Home</li>
-            <li>ABout Us</li>
-            <li>Services</li>
-            <li>Team</li>
-            <li>Contact</li>
-            <div class="search-bar">
-                <input type="text" name="search" placeholder="Search" />
-                <button type="submit"></button>
-            </div>
+            <li><a href="#content">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="search-bar">
+            <input type="text" name="search" placeholder="Search">
+            <button type="submit"></button>
+        </div>
     </nav>
     <!-- Navigation End -->
 
@@ -40,8 +40,8 @@
             </div>
         </section>
         <!-- About Us Section -->
-        <section class="about-us">
-            <img src="assets/images/about-us.jpg" alt="About us Banner" />
+        <section id="about" class="about-us">
+            <img src="assets/images/about-us.jpg" alt="About us Banner">
             <h2>About Us</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere
@@ -51,10 +51,10 @@
             </p>
         </section>
         <!-- Services Section -->
-        <section class="our-services">
+        <section id="services" class="our-services">
             <h2>Our Services</h2>
             <div>
-                <img src="assets/images/digital.jpg" alt="Digital Banner" />
+                <img src="assets/images/digital.jpg" alt="Digital Banner">
                 <h3>Digital Transformation</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
@@ -65,7 +65,7 @@
                 <a href="#">Digital Plans</a>
             </div>
             <div>
-                <img src="assets/images/marketing.jpg" alt="Marketing Banner" />
+                <img src="assets/images/marketing.jpg" alt="Marketing Banner">
                 <h3>Marketing</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
@@ -76,7 +76,7 @@
                 <a href="#">Marketing Plans</a>
             </div>
             <div>
-                <img src="assets/images/video.jpg" alt="Video Banner" />
+                <img src="assets/images/video.jpg" alt="Video Banner">
                 <h3>Video Production</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
@@ -87,7 +87,7 @@
                 <a href="#">Video Plans</a>
             </div>
             <div>
-                <img src="assets/images/web.jpg" alt="Web Banner" />
+                <img src="assets/images/web.jpg" alt="Web Banner">
                 <h3>Web Development</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
@@ -98,7 +98,7 @@
                 <a href="#">Web Plans</a>
             </div>
             <div>
-                <img src="assets/images/print.jpg" alt="Print Banner" />
+                <img src="assets/images/print.jpg" alt="Print Banner">
                 <h3>Print</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
@@ -121,11 +121,11 @@
             <a href="#learnMore">Learn More</a>
         </div>
         <!-- Team section -->
-        <section class="our-team">
+        <section id="team" class="our-team">
             <h2>Our Team</h2>
             <div class="team-cards">
                 <div class="card1">
-                    <img src="assets/images/john.jpg" alt="CEO" />
+                    <img src="assets/images/john.jpg" alt="CEO">
                     <h3>John Doe</h3>
                     <small>CEO and Co-owner</small>
                     <p>
@@ -136,7 +136,7 @@
                     </p>
                 </div>
                 <div class="card2">
-                    <img src="assets/images/bob.jpg" alt="CFO" />
+                    <img src="assets/images/bob.jpg" alt="CFO">
                     <h3>Bob Rite</h3>
                     <small>CFO and Co-owner</small>
                     <p>
@@ -149,23 +149,23 @@
             </div>
         </section>
         <!-- Contact Us Section -->
-        <section class="contact-us">
+        <section id="contact" class="contact-us">
             <div class="contact-us-form">
                 <h2>Contact Us</h2>
                 <div class="contact-form">
                     <h3>Send us a message</h3>
                     <div class="form-input-group">
                         <div class="input-group">
-                            <label for="Full-name">Full Name</label>
-                            <input type="text" name="fullname" />
+                            <label>Full Name</label>
+                            <input type="text" name="fullname">
                         </div>
                         <div class="input-group">
-                            <label for="email">Email</label>
-                            <input type="text" name="email" />
+                            <label>Email</label>
+                            <input type="text" name="email">
                         </div>
                         <div class="input-group">
-                            <label for="message">Message</label>
-                            <textarea type="text" rows="7" cols="100" name="message">
+                            <label>Message</label>
+                            <textarea rows="7" cols="100" name="message">
                 </textarea>
                         </div>
                         <button>Send</button>
@@ -194,9 +194,7 @@
             </div>
             <div class="location-map">
                 <h3>Location</h3>
-                <div class="google-map">
-
-                </div>
+                <div class="google-map"></div>
             </div>
         </section>
     </div>
