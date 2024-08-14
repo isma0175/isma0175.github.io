@@ -2,14 +2,19 @@
 <html lang="zxx">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobile Mockup</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <body>
     <!-- Navigation Start-->
-    <nav id="nav">
+    <nav id="nav" class="nav-menu">
+        <div class="logo">
+            <img src="/assets/images/logo.png" alt="" />
+        </div>
         <ul>
             <li><a href="#content">Home</a></li>
             <li><a href="#about">About Us</a></li>
@@ -18,161 +23,235 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="search-bar">
-            <input type="text" name="search" placeholder="Search">
-            <button type="submit"></button>
+            <input type="text" name="search" placeholder="Search" />
+            <button type="submit">
+                <svg class="hero-button-icon" data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5"
+                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 21L15.803 15.803M15.803 15.803A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607Z"
+                        stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
         </div>
     </nav>
     <!-- Navigation End -->
-
     <!-- Content Start-->
-    <div id="content">
+    <div id="content" class="container">
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="inner-hero">
                 <h1>Welcome to Three Star Media</h1>
-                <p>
+                <p class="hero-content">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed fuga
                     esse repellat unde assumenda officia, vero earum magnam magni
                     doloremque vitae maxime nulla et consectetur, quae temporibus dicta!
                     Natus, voluptatibus?
                 </p>
-                <a href="#contact-us">Connect with us</a>
+                <a class="hero-button" href="#contact-us">
+                    Connect with us
+                    <svg class="hero-button-icon" fill="#000000" width="800px" height="800px" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z" />
+                    </svg>
+                </a>
             </div>
         </section>
         <!-- About Us Section -->
         <section id="about" class="about-us">
-            <img src="assets/images/about-us.jpg" alt="About us Banner">
-            <h2>About Us</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere
-                molestiae dicta dolore soluta praesentium enim dolorem architecto
-                nobis explicabo! Laborum fugit velit placeat saepe repudiandae
-                aliquid, beatae possimus! Dignissimos!
-            </p>
+            <div class="about-image">
+                <img src="assets/images/about-us.jpg" alt="About us Banner" />
+            </div>
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere
+                    molestiae dicta dolore soluta praesentium enim dolorem architecto
+                    nobis explicabo! Laborum fugit velit placeat saepe repudiandae
+                    aliquid, beatae possimus! Dignissimos!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Necessitatibus doloribus reiciendis, culpa repellat sint nobis
+                    dolorum eveniet quasi assumenda facere rem enim harum dolores ex
+                    corporis iste quo rerum fugit!
+                </p>
+            </div>
         </section>
         <!-- Services Section -->
         <section id="services" class="our-services">
             <h2>Our Services</h2>
-            <div>
-                <img src="assets/images/digital.jpg" alt="Digital Banner">
-                <h3>Digital Transformation</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
-                    obcaecati dolorum cum nostrum maxime quaerat esse repudiandae
-                    sapiente soluta laudantium nobis suscipit, repellat, amet rerum
-                    exercitationem nesciunt vero impedit quam!
-                </p>
-                <a href="#">Digital Plans</a>
-            </div>
-            <div>
-                <img src="assets/images/marketing.jpg" alt="Marketing Banner">
-                <h3>Marketing</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
-                    obcaecati dolorum cum nostrum maxime quaerat esse repudiandae
-                    sapiente soluta laudantium nobis suscipit, repellat, amet rerum
-                    exercitationem nesciunt vero impedit quam!
-                </p>
-                <a href="#">Marketing Plans</a>
-            </div>
-            <div>
-                <img src="assets/images/video.jpg" alt="Video Banner">
-                <h3>Video Production</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
-                    obcaecati dolorum cum nostrum maxime quaerat esse repudiandae
-                    sapiente soluta laudantium nobis suscipit, repellat, amet rerum
-                    exercitationem nesciunt vero impedit quam!
-                </p>
-                <a href="#">Video Plans</a>
-            </div>
-            <div>
-                <img src="assets/images/web.jpg" alt="Web Banner">
-                <h3>Web Development</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
-                    obcaecati dolorum cum nostrum maxime quaerat esse repudiandae
-                    sapiente soluta laudantium nobis suscipit, repellat, amet rerum
-                    exercitationem nesciunt vero impedit quam!
-                </p>
-                <a href="#">Web Plans</a>
-            </div>
-            <div>
-                <img src="assets/images/print.jpg" alt="Print Banner">
-                <h3>Print</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
-                    obcaecati dolorum cum nostrum maxime quaerat esse repudiandae
-                    sapiente soluta laudantium nobis suscipit, repellat, amet rerum
-                    exercitationem nesciunt vero impedit quam!
-                </p>
-                <a href="#">Print Plans</a>
+            <div class="service-cards">
+                <div class="service-card">
+                    <img src="assets/images/digital.jpg" alt="Digital Banner" />
+                    <div class="service-card-content">
+                        <h3>Digital Transformation</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
+                            obcaecati dolorum cum nostrum maxime quaerat esse repudiandae
+                            sapiente soluta laudantium nobis suscipit, repellat, amet rerum
+                            exercitationem nesciunt vero impedit quam!
+                        </p>
+                        <a href="#">Digital Plans
+                            <svg class="services-button-icon" fill="#000000" width="800px" height="800px"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="assets/images/marketing.jpg" alt="Marketing Banner" />
+                    <div class="service-card-content">
+                        <h3>Marketing</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
+                            obcaecati dolorum cum nostrum maxime quaerat esse repudiandae
+                            sapiente soluta laudantium nobis suscipit, repellat, amet rerum
+                            exercitationem nesciunt vero impedit quam!
+                        </p>
+                        <a href="#">Marketing Plans
+                            <svg class="services-button-icon" fill="#000000" width="800px" height="800px"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="assets/images/video.jpg" alt="Video Banner" />
+                    <div class="service-card-content">
+                        <h3>Video Production</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
+                            obcaecati dolorum cum nostrum maxime quaerat esse repudiandae
+                            sapiente soluta laudantium nobis suscipit, repellat, amet rerum
+                            exercitationem nesciunt vero impedit quam!
+                        </p>
+                        <a href="#">Video Plans
+                            <svg class="services-button-icon" fill="#000000" width="800px" height="800px"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="assets/images/web.jpg" alt="Web Banner" />
+                    <div class="service-card-content">
+                        <h3>Web Development</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
+                            obcaecati dolorum cum nostrum maxime quaerat esse repudiandae
+                            sapiente soluta laudantium nobis suscipit, repellat, amet rerum
+                            exercitationem nesciunt vero impedit quam!
+                        </p>
+                        <a href="#">Web Plans
+                            <svg class="services-button-icon" fill="#000000" width="800px" height="800px"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="assets/images/print.jpg" alt="Print Banner" />
+                    <div class="service-card-content">
+                        <h3>Print</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
+                            obcaecati dolorum cum nostrum maxime quaerat esse repudiandae
+                            sapiente soluta laudantium nobis suscipit, repellat, amet rerum
+                            exercitationem nesciunt vero impedit quam!
+                        </p>
+                        <a href="#">Print Plans
+                            <svg class="services-button-icon" fill="#000000" width="800px" height="800px"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Vision, Call to Action -->
         <div class="vision-cta">
-            <h3>Our Vision</h3>
-            <p>
+            <h3 class="vision-header">Our Vision</h3>
+            <p class="vision-content">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
                 ex incidunt, consequatur, eum distinctio optio ea qui sed
                 necessitatibus delectus aut fugiat nostrum omnis, maxime accusamus
                 laboriosam similique numquam dolorem.
             </p>
-            <a href="#learnMore">Learn More</a>
+            <a class="vision-cta-btn" href="#learnMore">
+                Learn More
+                <svg class="services-button-icon" fill="#000000" width="800px" height="800px" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z" />
+                </svg>
+            </a>
         </div>
         <!-- Team section -->
         <section id="team" class="our-team">
-            <h2>Our Team</h2>
+            <h2 class="team-header">Our Team</h2>
             <div class="team-cards">
-                <div class="card1">
-                    <img src="assets/images/john.jpg" alt="CEO">
-                    <h3>John Doe</h3>
-                    <small>CEO and Co-owner</small>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                        velit eum alias exercitationem molestias qui sunt, voluptate ipsum
-                        fuga soluta ducimus rerum, ut consequatur necessitatibus magnam
-                        cupiditate odio laboriosam delectus?
-                    </p>
+                <div class="team-card-1">
+                    <img src="assets/images/john.jpg" alt="CEO" />
+                    <div class="team-card-content">
+                        <h3>John Doe</h3>
+                        <small>CEO and Co-owner</small>
+                        <hr />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                            velit eum alias exercitationem molestias qui sunt, voluptate
+                            ipsum fuga soluta ducimus rerum, ut consequatur necessitatibus
+                            magnam cupiditate odio laboriosam delectus?
+                        </p>
+                    </div>
                 </div>
-                <div class="card2">
-                    <img src="assets/images/bob.jpg" alt="CFO">
-                    <h3>Bob Rite</h3>
-                    <small>CFO and Co-owner</small>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                        velit eum alias exercitationem molestias qui sunt, voluptate ipsum
-                        fuga soluta ducimus rerum, ut consequatur necessitatibus magnam
-                        cupiditate odio laboriosam delectus?
-                    </p>
+                <div class="team-card-1">
+                    <img src="assets/images/bob.jpg" alt="CFO" />
+                    <div class="team-card-content">
+                        <h3>Bob Rite</h3>
+                        <small>CFO and Co-owner</small>
+                        <hr />
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                            velit eum alias exercitationem molestias qui sunt, voluptate
+                            ipsum fuga soluta ducimus rerum, ut consequatur necessitatibus
+                            magnam cupiditate odio laboriosam delectus?
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Contact Us Section -->
         <section id="contact" class="contact-us">
-            <div class="contact-us-form">
-                <h2>Contact Us</h2>
-                <div class="contact-form">
-                    <h3>Send us a message</h3>
-                    <div class="form-input-group">
-                        <div class="input-group">
-                            <label>Full Name</label>
-                            <input type="text" name="fullname">
-                        </div>
-                        <div class="input-group">
-                            <label>Email</label>
-                            <input type="text" name="email">
-                        </div>
-                        <div class="input-group">
-                            <label>Message</label>
-                            <textarea rows="7" cols="100" name="message">
-                </textarea>
-                        </div>
-                        <button>Send</button>
+            <h2 class="contact-header">Contact Us</h2>
+            <form method="post" class="contact-form">
+                <h3>Send us a message</h3>
+                <div class="form-input-group">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" name="fullname" />
                     </div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="text" name="email" />
+                    </div>
+                    <div class="input-group">
+                        <label>Message</label>
+                        <textarea rows="7" name="message"></textarea>
+                    </div>
+                    <button>Send</button>
                 </div>
-            </div>
+            </form>
             <div class="timing">
+                <h3>Hours of Operations</h3>
                 <table>
                     <thead>
                         <tr>
@@ -194,15 +273,20 @@
             </div>
             <div class="location-map">
                 <h3>Location</h3>
-                <div class="google-map"></div>
+                <div class="google-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9571797970816!2d-75.75831012381741!3d45.34967664107276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1723637771128!5m2!1sen!2sca"
+                        width="100%" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
         </section>
     </div>
     <!-- Content End -->
-
     <!-- Footer Start -->
-    <div id="footer">
-        <p><sup>&copy;</sup>Copyright Three Star Media, 2024</p>
+    <div id="footer" class="footer">
+        <p>&copy;Copyright Three Star Media, 2024</p>
         <p>Images are taken from <a href="#">Unsplash</a></p>
     </div>
     <!-- Footer End -->
