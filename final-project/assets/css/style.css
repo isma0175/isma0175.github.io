@@ -345,6 +345,7 @@ td {
   /* Desktop Content Section Styling */
   .container {
     display: block;
+    width: auto;
     flex-grow: 1;
   }
 
